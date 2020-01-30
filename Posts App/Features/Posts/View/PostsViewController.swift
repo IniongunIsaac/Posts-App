@@ -34,7 +34,7 @@ class PostsViewController: BaseViewController {
             cell.usernameLable.text = element.User.username
             cell.descriptionTextView.text = element.description
             cell.hashTagsLabel.text = self?.getHashTags(hashTags: element.hashtags)
-            self?.setImage(imageUrl: element.image, imageView: cell.postImageView)
+            self?.setImage(imageUrl: element.image.replacingOccurrences(of: " ", with: "%20"), imageView: cell.postImageView)
             
             cell.addTapGesture { [weak self] in
                 //when a particular cell is clicked

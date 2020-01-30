@@ -65,13 +65,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJu-ZI-Zck">
-                                                    <rect key="frame" x="20" y="272" width="374" height="21"/>
+                                                    <rect key="frame" x="20" y="272" width="374" height="24"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="kGy-So-0ss">
-                                                    <rect key="frame" x="20" y="293" width="374" height="58"/>
+                                                    <rect key="frame" x="20" y="296" width="374" height="58"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="58" id="0fs-Wf-FNH"/>
@@ -82,7 +82,11 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZn-IY-QMQ" userLabel="Separator View">
-                                                    <rect key="frame" x="0.0" y="357" width="414" height="13"/>
+                                                    <rect key="frame" x="0.0" y="369" width="414" height="1"/>
+                                                    <color key="backgroundColor" white="0.92209795947488571" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="yna-gr-dMg"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,7 +94,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="On5-zx-PME" secondAttribute="trailing" id="7lG-eW-ymC"/>
                                                 <constraint firstItem="fZn-IY-QMQ" firstAttribute="leading" secondItem="xNi-wQ-B2q" secondAttribute="leading" id="8it-gM-cPk"/>
                                                 <constraint firstItem="NXK-Jz-mdg" firstAttribute="leading" secondItem="xNi-wQ-B2q" secondAttribute="leading" constant="20" id="AVX-Nw-UJI"/>
-                                                <constraint firstItem="fZn-IY-QMQ" firstAttribute="top" secondItem="kGy-So-0ss" secondAttribute="bottom" constant="6" id="Afk-rI-teN"/>
+                                                <constraint firstItem="fZn-IY-QMQ" firstAttribute="top" secondItem="kGy-So-0ss" secondAttribute="bottom" constant="15" id="Afk-rI-teN"/>
                                                 <constraint firstItem="On5-zx-PME" firstAttribute="top" secondItem="NXK-Jz-mdg" secondAttribute="bottom" constant="7.5" id="CZu-BN-OwH"/>
                                                 <constraint firstItem="NXK-Jz-mdg" firstAttribute="top" secondItem="xNi-wQ-B2q" secondAttribute="top" constant="10.5" id="E3D-k9-xdG"/>
                                                 <constraint firstAttribute="bottom" secondItem="fZn-IY-QMQ" secondAttribute="bottom" id="FrM-Rj-Fhh"/>
