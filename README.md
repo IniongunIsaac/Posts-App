@@ -18,3 +18,9 @@ The application was built using:
 * iOS 13.2 SDK
 * Swift 5.1
 * macOS Catalina 10.15.1
+
+### Screenshots
+
+![alt text](https://github.com/IniongunIsaac/Posts-App/blob/master/Posts%20App/screenshots/login.png)
+![alt text](https://github.com/IniongunIsaac/Posts-App/blob/master/Posts%20App/screenshots/register.png)
+![alt text](https://github.com/IniongunIsaac/Posts-App/blob/master/Posts%20App/screenshots/posts.png)
