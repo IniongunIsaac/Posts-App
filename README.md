@@ -24,3 +24,5 @@ The application was built using:
 ![alt text](https://github.com/IniongunIsaac/Posts-App/blob/master/Posts%20App/screenshots/login.png)
 ![alt text](https://github.com/IniongunIsaac/Posts-App/blob/master/Posts%20App/screenshots/register.png)
 ![alt text](https://github.com/IniongunIsaac/Posts-App/blob/master/Posts%20App/screenshots/posts.png)
+![alt text](https://github.com/IniongunIsaac/Posts-App/blob/master/Posts%20App/screenshots/post_details.png)
+![alt text](https://github.com/IniongunIsaac/Posts-App/blob/master/Posts%20App/screenshots/platform_users.png)
