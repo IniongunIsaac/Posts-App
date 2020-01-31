@@ -13,4 +13,5 @@ import RxCocoa
 protocol IPostsViewModel {
     var posts: PublishSubject<[Post]> { get }
     func getPosts()
+    func getPostsByHashTag(hashTag: String)
 }

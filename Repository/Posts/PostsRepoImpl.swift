@@ -22,4 +22,8 @@ public struct PostsRepoImpl: IPostsRepo {
         return postsRemote!.getPosts()
     }
     
+    public func getPostsByHashTag(hashTag: String) -> Observable<ApiResponse<Posts>> {
+        return postsRemote!.getPostsByHashTag(hashTag: hashTag)
+    }
+    
 }

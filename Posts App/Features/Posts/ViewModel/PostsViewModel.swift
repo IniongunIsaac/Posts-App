@@ -42,6 +42,29 @@ class PostsViewModel: BaseViewModel, IPostsViewModel {
             }).disposed(by: disposeBag)
     }
     
+    func getPostsByHashTag(hashTag: String) {
+        
+        isLoading.onNext(true)
+        
+        postsRepo.getPostsByHashTag(hashTag: hashTag).subscribe(onNext: { [weak self] res in
+            
+            self?.isLoading.onNext(false)
+            
+            if let postsRes = res.data {
+                self?.posts.onNext(postsRes.posts)
+            } else if let apiErr = res.apiError {
+                self?.apiError.onNext(apiErr)
+            } else if let tokenExprErr = res.tokenExpiredErrorResponse {
+                self?.tokenExpiredError.onNext(tokenExprErr.err)
+            }
+            
+            }, onError: { [weak self] error in
+                self?.isLoading.onNext(false)
+                self?.throwableError.onNext(error)
+            }).disposed(by: disposeBag)
+        
+    }
+    
     override func viewDidLoad() {
         getPosts()
     }

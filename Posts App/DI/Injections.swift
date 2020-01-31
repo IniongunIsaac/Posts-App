@@ -14,6 +14,8 @@ extension SwinjectStoryboard {
     public static func setup() {
         AuthInjections.setup(container: defaultContainer)
         PostsInjections.setup(container: defaultContainer)
+        PostDetailsInjections.setup(container: defaultContainer)
+        UsersInjections.setup(container: defaultContainer)
     }
     
 }

@@ -11,4 +11,5 @@ import Entities
 
 public protocol IPostsRepo {
     func getPosts() -> Observable<ApiResponse<Posts>>
+    func getPostsByHashTag(hashTag: String) -> Observable<ApiResponse<Posts>>
 }

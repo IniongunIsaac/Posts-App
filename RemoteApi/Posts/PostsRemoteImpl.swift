@@ -17,4 +17,8 @@ public class PostsRemoteImpl: BaseRemoteApiImpl, IPostsRemote {
         return makeApiRequest(responseType: ApiResponse<Posts>.self, url: RemoteApiConstants.POSTS_URL, params: nil)
     }
     
+    public func getPostsByHashTag(hashTag: String) -> Observable<ApiResponse<Posts>> {
+        return makeApiRequest(responseType: ApiResponse<Posts>.self, url: "\(RemoteApiConstants.POSTS_BY_HASHTAG_URL)/\(hashTag)", params: nil)
+    }
+    
 }
