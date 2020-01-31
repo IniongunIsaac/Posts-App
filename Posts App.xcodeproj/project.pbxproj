@@ -57,6 +57,8 @@
 		1440BFFE23E438F5002EE12D /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440BFFD23E438F5002EE12D /* UsersViewController.swift */; };
 		1440C00023E43999002EE12D /* UsersInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440BFFF23E43999002EE12D /* UsersInjections.swift */; };
 		1440C00223E43A73002EE12D /* Users.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1440C00123E43A73002EE12D /* Users.storyboard */; };
+		1440C00523E447BB002EE12D /* post_details.png in Resources */ = {isa = PBXBuildFile; fileRef = 1440C00323E447BA002EE12D /* post_details.png */; };
+		1440C00623E447BB002EE12D /* platform_users.png in Resources */ = {isa = PBXBuildFile; fileRef = 1440C00423E447BB002EE12D /* platform_users.png */; };
 		146025EB23E1F7C700648AF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146025EA23E1F7C700648AF6 /* AppDelegate.swift */; };
 		146025ED23E1F7C700648AF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146025EC23E1F7C700648AF6 /* SceneDelegate.swift */; };
 		146025F223E1F7C700648AF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146025F023E1F7C700648AF6 /* Main.storyboard */; };
@@ -272,6 +274,8 @@
 		1440BFFD23E438F5002EE12D /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		1440BFFF23E43999002EE12D /* UsersInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInjections.swift; sourceTree = "<group>"; };
 		1440C00123E43A73002EE12D /* Users.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Users.storyboard; sourceTree = "<group>"; };
+		1440C00323E447BA002EE12D /* post_details.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = post_details.png; sourceTree = "<group>"; };
+		1440C00423E447BB002EE12D /* platform_users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = platform_users.png; sourceTree = "<group>"; };
 		146025E723E1F7C700648AF6 /* Posts App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Posts App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		146025EA23E1F7C700648AF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		146025EC23E1F7C700648AF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -456,6 +460,8 @@
 		1440BFCA23E34341002EE12D /* screenshots */ = {
 			isa = PBXGroup;
 			children = (
+				1440C00423E447BB002EE12D /* platform_users.png */,
+				1440C00323E447BA002EE12D /* post_details.png */,
 				1440BFCD23E3444F002EE12D /* login.png */,
 				1440BFCB23E3444F002EE12D /* posts.png */,
 				1440BFCC23E3444F002EE12D /* register.png */,
@@ -1081,6 +1087,7 @@
 			files = (
 				1440BFA823E30ACB002EE12D /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				1440BFAE23E30ACB002EE12D /* Montserrat-Black.ttf in Resources */,
+				1440C00523E447BB002EE12D /* post_details.png in Resources */,
 				1440BFAD23E30ACB002EE12D /* montserrat.ttf in Resources */,
 				1440BFA023E30ACB002EE12D /* Montserrat-Light.ttf in Resources */,
 				1440BFCF23E3444F002EE12D /* register.png in Resources */,
@@ -1091,6 +1098,7 @@
 				1440BFA123E30ACB002EE12D /* Montserrat-SemiBold.ttf in Resources */,
 				1440BF9F23E30ACB002EE12D /* Montserrat_Bold.ttf in Resources */,
 				1440BFD023E3444F002EE12D /* login.png in Resources */,
+				1440C00623E447BB002EE12D /* platform_users.png in Resources */,
 				1440BFA223E30ACB002EE12D /* Montserrat-ExtraLight.ttf in Resources */,
 				146025F423E1F7C800648AF6 /* Assets.xcassets in Resources */,
 				1440BFB523E30E17002EE12D /* Posts.storyboard in Resources */,
