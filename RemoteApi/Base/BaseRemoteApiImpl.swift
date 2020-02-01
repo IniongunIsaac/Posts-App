@@ -56,6 +56,56 @@ public class BaseRemoteApiImpl: IBaseRemoteApi {
             }
     }
     
+    func makeMultiPartFormDataApiRequest<T>(responseType: T.Type, url: String, method: HTTPMethod = .post, params: [String : Data]) -> Observable<T> where T : Codable {
+        return Observable.create { observer -> Disposable in
+            
+            Alamofire.upload(multipartFormData: { multipartFormData in
+                for (key, value) in params {
+                    multipartFormData.append(value, withName: key)
+                }
+            }, to: url, method: method, headers: self.requestHeaders, encodingCompletion: { encodingResult in
+
+                switch encodingResult {
+
+                case .success(let upload, _, _):
+                    
+                    upload.responseString { response in
+                        
+                        let responseString = String(data: response.data!, encoding: .utf8)!
+                        
+                        var jsonResponseString = ""
+                        
+                        //if the `responseString` contains an ApiError using key `msg`, create a new json string with key `apiError`
+                        //if the `responseString` contains an TokenExpiredErrorResponse using key `err`, create a new json string with key `tokenExpiredErrorResponse`
+                        //otherwise, create a new json string with key `data`
+                        
+                        if responseString.localizedCaseInsensitiveContains("msg") {
+                            jsonResponseString = self.getJsonString(withKey: "apiError", forValue: responseString)
+                        } else if responseString.localizedCaseInsensitiveContains("err") {
+                            jsonResponseString = self.getJsonString(withKey: "tokenExpiredErrorResponse", forValue: responseString)
+                        } else {
+                            jsonResponseString = self.getJsonString(withKey: "data", forValue: responseString)
+                        }
+
+                        //map the result of `jsonResponseString` above to the `responseType`
+                        let requestResponse = try! responseType.mapTo(jsonString: jsonResponseString)!
+                        
+                        observer.onNext(requestResponse)
+                        observer.onCompleted()
+                        
+                    }
+                    
+                case .failure(let encodingError):
+                    observer.onError(encodingError)
+                    
+                }
+                
+            })
+            
+            return Disposables.create()
+        }
+    }
+    
     /// Creates a new JSON String
     ///
     /// - Parameter withKey: key to be formed as part of the new json string

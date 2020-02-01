@@ -136,7 +136,7 @@ class BaseViewController: UIViewController {
         ProgressHUD.dismiss()
     }
     
-    private func showAlert(message: String, type: AlertType) {
+    func showAlert(message: String, type: AlertType) {
         self.alert?.showAlert(text: message, type: type)
     }
     

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="montserrat.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--New Post View Controller-->
+        <scene sceneID="ssl-rJ-1s8">
+            <objects>
+                <viewController storyboardIdentifier="newPostVC" id="wcV-3c-UzI" customClass="NewPostViewController" customModule="Posts_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2DH-SM-LQD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGe-u1-CnO">
+                                <rect key="frame" x="20" y="64" width="374" height="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VbH-EZ-WNq" customClass="TextFieldWithBorderAttributes" customModule="Posts_App" customModuleProvider="target">
+                                <rect key="frame" x="20" y="84" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nRI-0l-Fcg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1450980392" green="0.21176470589999999" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mv3-au-w4B">
+                                <rect key="frame" x="20" y="139" width="374" height="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="J3h-bm-ne5" customClass="TextViewWithBorderAttributes" customModule="Posts_App" customModuleProvider="target">
+                                <rect key="frame" x="20" y="159" width="374" height="87"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="iVd-AG-IZf"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1450980392" green="0.21176470589999999" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hash Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTA-Hr-0CX">
+                                <rect key="frame" x="20" y="261" width="374" height="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="078-jN-5xU" customClass="TextFieldWithBorderAttributes" customModule="Posts_App" customModuleProvider="target">
+                                <rect key="frame" x="20" y="281" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nvy-oG-TSz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1450980392" green="0.21176470589999999" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gW8-Yy-F9u" customClass="ButtonWithBorderAttributes" customModule="Posts_App" customModuleProvider="target">
+                                <rect key="frame" x="20" y="336" width="153" height="35"/>
+                                <color key="backgroundColor" red="0.1450980392" green="0.21176470589999999" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="JPV-lf-wk4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Choose Post Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="choosePostImageButtonTapped:" destination="wcV-3c-UzI" eventType="touchUpInside" id="FHQ-U5-L8m"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WSV-Bs-b1w">
+                                <rect key="frame" x="20" y="379" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="ZXf-fj-FeM"/>
+                                    <constraint firstAttribute="width" constant="250" id="rcb-NW-6pK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anc-XB-r0h" customClass="ButtonWithBorderAttributes" customModule="Posts_App" customModuleProvider="target">
+                                <rect key="frame" x="157.5" y="675" width="99" height="40"/>
+                                <color key="backgroundColor" red="0.1450980392" green="0.21176470589999999" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jd4-tU-Obr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Create Post">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createPostButtonTapped:" destination="wcV-3c-UzI" eventType="touchUpInside" id="l8C-bY-dxr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="J3h-bm-ne5" firstAttribute="leading" secondItem="d41-g5-rF1" secondAttribute="leading" constant="20" id="5gj-m0-Y6B"/>
+                            <constraint firstItem="WSV-Bs-b1w" firstAttribute="top" secondItem="gW8-Yy-F9u" secondAttribute="bottom" constant="8" id="8WP-KN-BJ2"/>
+                            <constraint firstItem="d41-g5-rF1" firstAttribute="trailing" secondItem="078-jN-5xU" secondAttribute="trailing" constant="20" id="9Tz-tL-h4u"/>
+                            <constraint firstItem="VbH-EZ-WNq" firstAttribute="top" secondItem="bGe-u1-CnO" secondAttribute="bottom" constant="4" id="9zE-Qk-89A"/>
+                            <constraint firstItem="gW8-Yy-F9u" firstAttribute="leading" secondItem="d41-g5-rF1" secondAttribute="leading" constant="20" id="CEY-pV-RWT"/>
+                            <constraint firstItem="J3h-bm-ne5" firstAttribute="top" secondItem="Mv3-au-w4B" secondAttribute="bottom" constant="4" id="DY2-U7-O2I"/>
+                            <constraint firstItem="d41-g5-rF1" firstAttribute="trailing" secondItem="VbH-EZ-WNq" secondAttribute="trailing" constant="20" id="ElH-dp-Ixc"/>
+                            <constraint firstItem="WSV-Bs-b1w" firstAttribute="leading" secondItem="d41-g5-rF1" secondAttribute="leading" constant="20" id="Fck-vY-VMl"/>
+                            <constraint firstItem="bGe-u1-CnO" firstAttribute="top" secondItem="d41-g5-rF1" secondAttribute="top" constant="20" id="IJq-kz-TaE"/>
+                            <constraint firstItem="d41-g5-rF1" firstAttribute="trailing" secondItem="J3h-bm-ne5" secondAttribute="trailing" constant="20" id="P4a-jG-N4D"/>
+                            <constraint firstItem="078-jN-5xU" firstAttribute="top" secondItem="sTA-Hr-0CX" secondAttribute="bottom" constant="4" id="XdU-oX-flS"/>
+                            <constraint firstItem="sTA-Hr-0CX" firstAttribute="leading" secondItem="d41-g5-rF1" secondAttribute="leading" constant="20" id="Xm0-TC-jkB"/>
+                            <constraint firstItem="sTA-Hr-0CX" firstAttribute="top" secondItem="J3h-bm-ne5" secondAttribute="bottom" constant="15" id="b27-8m-sqx"/>
+                            <constraint firstItem="VbH-EZ-WNq" firstAttribute="leading" secondItem="d41-g5-rF1" secondAttribute="leading" constant="20" id="dTv-jP-9sc"/>
+                            <constraint firstItem="Mv3-au-w4B" firstAttribute="top" secondItem="VbH-EZ-WNq" secondAttribute="bottom" constant="15" id="dXT-Zx-qOu"/>
+                            <constraint firstItem="bGe-u1-CnO" firstAttribute="leading" secondItem="d41-g5-rF1" secondAttribute="leading" constant="20" id="eZU-xN-iSM"/>
+                            <constraint firstItem="d41-g5-rF1" firstAttribute="trailing" secondItem="bGe-u1-CnO" secondAttribute="trailing" constant="20" id="esx-4j-ElO"/>
+                            <constraint firstItem="anc-XB-r0h" firstAttribute="top" secondItem="WSV-Bs-b1w" secondAttribute="bottom" constant="46" id="gtc-t2-qFc"/>
+                            <constraint firstItem="Mv3-au-w4B" firstAttribute="leading" secondItem="d41-g5-rF1" secondAttribute="leading" constant="20" id="klQ-Bb-Yv6"/>
+                            <constraint firstItem="d41-g5-rF1" firstAttribute="trailing" secondItem="sTA-Hr-0CX" secondAttribute="trailing" constant="20" id="oMf-VQ-gXc"/>
+                            <constraint firstItem="d41-g5-rF1" firstAttribute="trailing" secondItem="Mv3-au-w4B" secondAttribute="trailing" constant="20" id="pkW-dN-kdQ"/>
+                            <constraint firstItem="gW8-Yy-F9u" firstAttribute="top" secondItem="078-jN-5xU" secondAttribute="bottom" constant="15" id="sDB-6i-9lk"/>
+                            <constraint firstItem="anc-XB-r0h" firstAttribute="centerX" secondItem="2DH-SM-LQD" secondAttribute="centerX" id="ugs-u5-UzJ"/>
+                            <constraint firstItem="078-jN-5xU" firstAttribute="leading" secondItem="d41-g5-rF1" secondAttribute="leading" constant="20" id="zv9-aH-Kmv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d41-g5-rF1"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="J3h-bm-ne5" id="agA-wh-uow"/>
+                        <outlet property="hashTagsTextfield" destination="078-jN-5xU" id="UTj-Rt-bi6"/>
+                        <outlet property="postImageView" destination="WSV-Bs-b1w" id="Fid-eC-U3O"/>
+                        <outlet property="titleTextfield" destination="VbH-EZ-WNq" id="7Gm-3S-uWe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUJ-Mc-CNj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-291.304347826087" y="34.821428571428569"/>
+        </scene>
+    </scenes>
+</document>

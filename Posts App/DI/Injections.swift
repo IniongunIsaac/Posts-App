@@ -16,6 +16,7 @@ extension SwinjectStoryboard {
         PostsInjections.setup(container: defaultContainer)
         PostDetailsInjections.setup(container: defaultContainer)
         UsersInjections.setup(container: defaultContainer)
+        AddPostInjections.setup(container: defaultContainer)
     }
     
 }

@@ -59,6 +59,17 @@
 		1440C00223E43A73002EE12D /* Users.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1440C00123E43A73002EE12D /* Users.storyboard */; };
 		1440C00523E447BB002EE12D /* post_details.png in Resources */ = {isa = PBXBuildFile; fileRef = 1440C00323E447BA002EE12D /* post_details.png */; };
 		1440C00623E447BB002EE12D /* platform_users.png in Resources */ = {isa = PBXBuildFile; fileRef = 1440C00423E447BB002EE12D /* platform_users.png */; };
+		1440C00923E45B10002EE12D /* IAddPostRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440C00823E45B10002EE12D /* IAddPostRemote.swift */; };
+		1440C00B23E45B27002EE12D /* AddPostRemoteImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440C00A23E45B27002EE12D /* AddPostRemoteImpl.swift */; };
+		1440C01023E4961C002EE12D /* IAddPostRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440C00F23E4961C002EE12D /* IAddPostRepo.swift */; };
+		1440C01223E49629002EE12D /* AddPostRepoImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440C01123E49629002EE12D /* AddPostRepoImpl.swift */; };
+		1440C01423E497BD002EE12D /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440C01323E497BD002EE12D /* AuthResponse.swift */; };
+		1440C01B23E49924002EE12D /* IAddPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440C01A23E49924002EE12D /* IAddPostViewModel.swift */; };
+		1440C01D23E49931002EE12D /* AddPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440C01C23E49931002EE12D /* AddPostViewModel.swift */; };
+		1440C02123E4E7CC002EE12D /* AddPostRequestKeyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440C01E23E49C02002EE12D /* AddPostRequestKeyConstants.swift */; };
+		1440C02323E4F0DC002EE12D /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440C02223E4F0DC002EE12D /* NewPostViewController.swift */; };
+		1440C02523E4F155002EE12D /* AddPostInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440C02423E4F155002EE12D /* AddPostInjections.swift */; };
+		1440C02723E4F473002EE12D /* NewPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1440C02623E4F473002EE12D /* NewPost.storyboard */; };
 		146025EB23E1F7C700648AF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146025EA23E1F7C700648AF6 /* AppDelegate.swift */; };
 		146025ED23E1F7C700648AF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146025EC23E1F7C700648AF6 /* SceneDelegate.swift */; };
 		146025F223E1F7C700648AF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146025F023E1F7C700648AF6 /* Main.storyboard */; };
@@ -80,7 +91,6 @@
 		1460263C23E1FBFB00648AF6 /* RemoteApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1460262623E1FAC300648AF6 /* RemoteApi.framework */; };
 		1460263D23E1FBFB00648AF6 /* RemoteApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1460262623E1FAC300648AF6 /* RemoteApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1460264123E1FC8400648AF6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1460264023E1FC8400648AF6 /* User.swift */; };
-		1460264323E1FD7100648AF6 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1460264223E1FD7100648AF6 /* AuthResponse.swift */; };
 		1460264523E1FDD200648AF6 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1460264423E1FDD200648AF6 /* ApiError.swift */; };
 		1460264723E1FFB900648AF6 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1460264623E1FFB900648AF6 /* Users.swift */; };
 		1460264923E2019F00648AF6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1460264823E2019F00648AF6 /* Post.swift */; };
@@ -276,6 +286,17 @@
 		1440C00123E43A73002EE12D /* Users.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Users.storyboard; sourceTree = "<group>"; };
 		1440C00323E447BA002EE12D /* post_details.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = post_details.png; sourceTree = "<group>"; };
 		1440C00423E447BB002EE12D /* platform_users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = platform_users.png; sourceTree = "<group>"; };
+		1440C00823E45B10002EE12D /* IAddPostRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAddPostRemote.swift; sourceTree = "<group>"; };
+		1440C00A23E45B27002EE12D /* AddPostRemoteImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostRemoteImpl.swift; sourceTree = "<group>"; };
+		1440C00F23E4961C002EE12D /* IAddPostRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAddPostRepo.swift; sourceTree = "<group>"; };
+		1440C01123E49629002EE12D /* AddPostRepoImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostRepoImpl.swift; sourceTree = "<group>"; };
+		1440C01323E497BD002EE12D /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		1440C01A23E49924002EE12D /* IAddPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAddPostViewModel.swift; sourceTree = "<group>"; };
+		1440C01C23E49931002EE12D /* AddPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewModel.swift; sourceTree = "<group>"; };
+		1440C01E23E49C02002EE12D /* AddPostRequestKeyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostRequestKeyConstants.swift; sourceTree = "<group>"; };
+		1440C02223E4F0DC002EE12D /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		1440C02423E4F155002EE12D /* AddPostInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostInjections.swift; sourceTree = "<group>"; };
+		1440C02623E4F473002EE12D /* NewPost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewPost.storyboard; sourceTree = "<group>"; };
 		146025E723E1F7C700648AF6 /* Posts App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Posts App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		146025EA23E1F7C700648AF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		146025EC23E1F7C700648AF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -293,7 +314,6 @@
 		1460262823E1FAC300648AF6 /* RemoteApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteApi.h; sourceTree = "<group>"; };
 		1460262923E1FAC300648AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1460264023E1FC8400648AF6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		1460264223E1FD7100648AF6 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		1460264423E1FDD200648AF6 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		1460264623E1FFB900648AF6 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		1460264823E2019F00648AF6 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -575,6 +595,59 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		1440C00723E45ACB002EE12D /* Add Post */ = {
+			isa = PBXGroup;
+			children = (
+				1440C00823E45B10002EE12D /* IAddPostRemote.swift */,
+				1440C00A23E45B27002EE12D /* AddPostRemoteImpl.swift */,
+			);
+			path = "Add Post";
+			sourceTree = "<group>";
+		};
+		1440C00E23E49606002EE12D /* Add Post */ = {
+			isa = PBXGroup;
+			children = (
+				1440C00F23E4961C002EE12D /* IAddPostRepo.swift */,
+				1440C01123E49629002EE12D /* AddPostRepoImpl.swift */,
+			);
+			path = "Add Post";
+			sourceTree = "<group>";
+		};
+		1440C01623E498F2002EE12D /* Add Post */ = {
+			isa = PBXGroup;
+			children = (
+				1440C01923E4990C002EE12D /* ViewModel */,
+				1440C01823E49907002EE12D /* View */,
+				1440C01723E498FB002EE12D /* Storyboard */,
+			);
+			path = "Add Post";
+			sourceTree = "<group>";
+		};
+		1440C01723E498FB002EE12D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1440C02623E4F473002EE12D /* NewPost.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1440C01823E49907002EE12D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1440C02223E4F0DC002EE12D /* NewPostViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1440C01923E4990C002EE12D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1440C01A23E49924002EE12D /* IAddPostViewModel.swift */,
+				1440C01C23E49931002EE12D /* AddPostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		146025DE23E1F7C700648AF6 = {
 			isa = PBXGroup;
 			children = (
@@ -620,7 +693,6 @@
 				1460260523E1FA9800648AF6 /* Entities.h */,
 				1460260623E1FA9800648AF6 /* Info.plist */,
 				1460264023E1FC8400648AF6 /* User.swift */,
-				1460264223E1FD7100648AF6 /* AuthResponse.swift */,
 				1460264423E1FDD200648AF6 /* ApiError.swift */,
 				1460264623E1FFB900648AF6 /* Users.swift */,
 				1460264823E2019F00648AF6 /* Post.swift */,
@@ -630,6 +702,7 @@
 				1460267723E2A7C200648AF6 /* TokenExpiredError.swift */,
 				1460267923E2A8F600648AF6 /* ApiResponse.swift */,
 				1460267B23E2ADC800648AF6 /* AuthType.swift */,
+				1440C01323E497BD002EE12D /* AuthResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -637,6 +710,7 @@
 		1460261623E1FAAE00648AF6 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				1440C00E23E49606002EE12D /* Add Post */,
 				1440BFF023E4364D002EE12D /* Users */,
 				1440BFD623E37CED002EE12D /* Post Details */,
 				1440BFBC23E31E80002EE12D /* Posts */,
@@ -650,6 +724,7 @@
 		1460262723E1FAC300648AF6 /* RemoteApi */ = {
 			isa = PBXGroup;
 			children = (
+				1440C00723E45ACB002EE12D /* Add Post */,
 				1440BFEB23E43560002EE12D /* Users */,
 				1440BFD123E3792C002EE12D /* Post Details */,
 				1440BFC123E31F40002EE12D /* Posts */,
@@ -716,6 +791,7 @@
 				1440BFC823E330EB002EE12D /* PostsInjections.swift */,
 				1440BFE523E40846002EE12D /* PostDetailsInjections.swift */,
 				1440BFFF23E43999002EE12D /* UsersInjections.swift */,
+				1440C02423E4F155002EE12D /* AddPostInjections.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -750,6 +826,7 @@
 		1460268323E2B14D00648AF6 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				1440C01623E498F2002EE12D /* Add Post */,
 				1440BFF523E43792002EE12D /* Users */,
 				1440BFDB23E37FCF002EE12D /* Post Details */,
 				1440BFB023E30DCF002EE12D /* Posts */,
@@ -838,6 +915,7 @@
 				146026A323E2D9A300648AF6 /* AuthRequestKeyConstants.swift */,
 				146026A523E2FAD500648AF6 /* Code+Extensions.swift */,
 				1440BFE923E41B55002EE12D /* HashTagButton.swift */,
+				1440C01E23E49C02002EE12D /* AddPostRequestKeyConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1110,6 +1188,7 @@
 				1440BFAB23E30ACB002EE12D /* Montserrat-LightItalic.ttf in Resources */,
 				1440C00223E43A73002EE12D /* Users.storyboard in Resources */,
 				1440BFA923E30ACB002EE12D /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				1440C02723E4F473002EE12D /* NewPost.storyboard in Resources */,
 				1440BFAC23E30ACB002EE12D /* Montserrat-Italic.ttf in Resources */,
 				1440BFE823E4093D002EE12D /* PostDetails.storyboard in Resources */,
 				1440BFA423E30ACB002EE12D /* Montserrat-BoldItalic.ttf in Resources */,
@@ -1241,13 +1320,16 @@
 				146026AA23E2FD5800648AF6 /* LoginViewController.swift in Sources */,
 				1460269123E2B33F00648AF6 /* BaseViewModel.swift in Sources */,
 				1460268523E2B1EC00648AF6 /* Injections.swift in Sources */,
+				1440C02523E4F155002EE12D /* AddPostInjections.swift in Sources */,
 				1440BFE023E3800C002EE12D /* IPostDetailsViewModel.swift in Sources */,
 				146026A623E2FAD500648AF6 /* Code+Extensions.swift in Sources */,
 				1440BFFA23E437BA002EE12D /* IUsersViewModel.swift in Sources */,
+				1440C01B23E49924002EE12D /* IAddPostViewModel.swift in Sources */,
 				146026A223E2D8F800648AF6 /* AuthValidation.swift in Sources */,
 				1440C00023E43999002EE12D /* UsersInjections.swift in Sources */,
 				146026AC23E2FDA300648AF6 /* AuthInjections.swift in Sources */,
 				146025EB23E1F7C700648AF6 /* AppDelegate.swift in Sources */,
+				1440C02323E4F0DC002EE12D /* NewPostViewController.swift in Sources */,
 				146025ED23E1F7C700648AF6 /* SceneDelegate.swift in Sources */,
 				1440BFE423E38211002EE12D /* PostDetailsViewController.swift in Sources */,
 				1460269323E2B39800648AF6 /* BaseViewController.swift in Sources */,
@@ -1255,12 +1337,14 @@
 				1440BFE223E380BC002EE12D /* PostDetailsViewModel.swift in Sources */,
 				1460269923E2D47F00648AF6 /* IAuthViewModel.swift in Sources */,
 				1440BFC923E330EB002EE12D /* PostsInjections.swift in Sources */,
+				1440C02123E4E7CC002EE12D /* AddPostRequestKeyConstants.swift in Sources */,
 				1460269523E2B3F000648AF6 /* CustomAlert.swift in Sources */,
 				1440BFFE23E438F5002EE12D /* UsersViewController.swift in Sources */,
 				1440BFE623E40846002EE12D /* PostDetailsInjections.swift in Sources */,
 				1440BFB723E30E3A002EE12D /* PostsViewController.swift in Sources */,
 				146026A823E2FCAE00648AF6 /* RegisterViewController.swift in Sources */,
 				1440BFEA23E41B55002EE12D /* HashTagButton.swift in Sources */,
+				1440C01D23E49931002EE12D /* AddPostViewModel.swift in Sources */,
 				1440BFBB23E31E2B002EE12D /* PostsViewModel.swift in Sources */,
 				146026A023E2D82E00648AF6 /* AuthViewModel.swift in Sources */,
 				1440BFC723E328BE002EE12D /* PostsTableViewCell.swift in Sources */,
@@ -1274,7 +1358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1460264323E1FD7100648AF6 /* AuthResponse.swift in Sources */,
 				1460267823E2A7C200648AF6 /* TokenExpiredError.swift in Sources */,
 				1460264D23E2030200648AF6 /* PostResponse.swift in Sources */,
 				1460267A23E2A8F600648AF6 /* ApiResponse.swift in Sources */,
@@ -1283,6 +1366,7 @@
 				1460264523E1FDD200648AF6 /* ApiError.swift in Sources */,
 				1460264723E1FFB900648AF6 /* Users.swift in Sources */,
 				1460267623E2A75B00648AF6 /* TokenExpiredErrorResponse.swift in Sources */,
+				1440C01423E497BD002EE12D /* AuthResponse.swift in Sources */,
 				1460264923E2019F00648AF6 /* Post.swift in Sources */,
 				1460267C23E2ADC800648AF6 /* AuthType.swift in Sources */,
 			);
@@ -1295,7 +1379,9 @@
 				1440BFF423E436FC002EE12D /* UsersRepoImpl.swift in Sources */,
 				1440BFBE23E31E91002EE12D /* IPostsRepo.swift in Sources */,
 				1440BFD823E37D03002EE12D /* IPostDetailsRepo.swift in Sources */,
+				1440C01223E49629002EE12D /* AddPostRepoImpl.swift in Sources */,
 				1440BFDA23E37DAD002EE12D /* PostDetailsRepoImpl.swift in Sources */,
+				1440C01023E4961C002EE12D /* IAddPostRepo.swift in Sources */,
 				1460269C23E2D5ED00648AF6 /* IAuthRepo.swift in Sources */,
 				1460269E23E2D64100648AF6 /* AuthRepoImpl.swift in Sources */,
 				1440BFF223E43659002EE12D /* IUsersRepo.swift in Sources */,
@@ -1307,6 +1393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1440C00923E45B10002EE12D /* IAddPostRemote.swift in Sources */,
 				1460267423E20F2F00648AF6 /* IAuthRemote.swift in Sources */,
 				1440BFD323E37B97002EE12D /* IPostDetailsRemote.swift in Sources */,
 				1460266B23E2060C00648AF6 /* BaseRemoteApiImpl.swift in Sources */,
@@ -1317,6 +1404,7 @@
 				1460266923E205B500648AF6 /* IBaseRemoteApi.swift in Sources */,
 				1440BFED23E43574002EE12D /* IUsersRemote.swift in Sources */,
 				1460267E23E2AEBA00648AF6 /* AuthRemoteImpl.swift in Sources */,
+				1440C00B23E45B27002EE12D /* AddPostRemoteImpl.swift in Sources */,
 				1440BFEF23E435E2002EE12D /* UsersRemoteImpl.swift in Sources */,
 				1440BFC523E31F6C002EE12D /* PostsRemoteImpl.swift in Sources */,
 			);

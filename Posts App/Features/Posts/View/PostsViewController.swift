@@ -45,7 +45,9 @@ class PostsViewController: BaseViewController {
     }
     
     @objc func newPostButtonTapped( _ sender: UIBarButtonItem) {
-        
+        let storyboard = UIStoryboard(name: "NewPost", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "newPostVC") as! NewPostViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func setChildClassObservers() {
