@@ -10,6 +10,7 @@ import Alamofire
 import RxAlamofire
 import RxSwift
 import Preference
+import Entities
 
 public class BaseRemoteApiImpl: IBaseRemoteApi {
     
@@ -71,33 +72,37 @@ public class BaseRemoteApiImpl: IBaseRemoteApi {
                     
                     upload.responseString { response in
                         
-                        let responseString = String(data: response.data!, encoding: .utf8)!
-                        
-                        var jsonResponseString = ""
-                        
-                        //if the `responseString` contains an ApiError using key `msg`, create a new json string with key `apiError`
-                        //if the `responseString` contains an TokenExpiredErrorResponse using key `err`, create a new json string with key `tokenExpiredErrorResponse`
-                        //otherwise, create a new json string with key `data`
-                        
-                        if responseString.localizedCaseInsensitiveContains("msg") {
-                            jsonResponseString = self.getJsonString(withKey: "apiError", forValue: responseString)
-                        } else if responseString.localizedCaseInsensitiveContains("err") {
-                            jsonResponseString = self.getJsonString(withKey: "tokenExpiredErrorResponse", forValue: responseString)
-                        } else {
-                            jsonResponseString = self.getJsonString(withKey: "data", forValue: responseString)
-                        }
+                        do {
+                            let responseString = String(data: response.data!, encoding: .utf8)!
+                            
+                            var jsonResponseString = ""
+                            
+                            //if the `responseString` contains an ApiError using key `msg`, create a new json string with key `apiError`
+                            //if the `responseString` contains an TokenExpiredErrorResponse using key `err`, create a new json string with key `tokenExpiredErrorResponse`
+                            //otherwise, create a new json string with key `data`
+                            
+                            if responseString.localizedCaseInsensitiveContains("msg") {
+                                jsonResponseString = self.getJsonString(withKey: "apiError", forValue: responseString)
+                            } else if responseString.localizedCaseInsensitiveContains("err") {
+                                jsonResponseString = self.getJsonString(withKey: "tokenExpiredErrorResponse", forValue: responseString)
+                            } else {
+                                jsonResponseString = self.getJsonString(withKey: "data", forValue: responseString)
+                            }
 
-                        //map the result of `jsonResponseString` above to the `responseType`
-                        let requestResponse = try! responseType.mapTo(jsonString: jsonResponseString)!
-                        
-                        observer.onNext(requestResponse)
-                        observer.onCompleted()
+                            //map the result of `jsonResponseString` above to the `responseType`
+                            let requestResponse = try responseType.mapTo(jsonString: jsonResponseString)!
+                            
+                            observer.onNext(requestResponse)
+                            observer.onCompleted()
+                            
+                        } catch {
+                            observer.onError(error)
+                        }
                         
                     }
                     
                 case .failure(let encodingError):
                     observer.onError(encodingError)
-                    
                 }
                 
             })
