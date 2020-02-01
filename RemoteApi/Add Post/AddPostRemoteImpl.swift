@@ -14,7 +14,7 @@ public class AddPostRemoteImpl : BaseRemoteApiImpl, IAddPostRemote {
     public override init() { }
     
     public func addPost(requestBody: [String : Data]) -> Observable<ApiResponse<PostResponse>> {
-        return makeApiRequest(responseType: ApiResponse<PostResponse>.self, url: RemoteApiConstants.POSTS_URL, method: .post, params: requestBody)
+        return makeMultiPartFormDataApiRequest(responseType: ApiResponse<PostResponse>.self, url: RemoteApiConstants.POSTS_URL, method: .post, params: requestBody)
     }
     
 }
