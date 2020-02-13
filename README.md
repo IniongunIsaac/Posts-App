@@ -1,6 +1,6 @@
 # Posts-App
 
-An iPhone app that pulls post from an API.
+An iPhone app that pulls post from an API. It also allows users to view a list of all other users on the platform as well as create posts of their own.
 
 ### How to run(installation):
 
